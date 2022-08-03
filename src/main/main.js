@@ -11,6 +11,7 @@ function nw() {
       preload: `${__dirname}/../preload/navigation.js`
     }
   });
+  win.setMenuBarVisibility(false);
   win.webContents.loadFile(`${__dirname}/../renderer/navigation.html`);
   browser = new BrowserView({
     webPreferences: {
@@ -65,5 +66,3 @@ function nw() {
 }
 
 app.on('ready', nw);
-
-Menu.setApplicationMenu(null);
