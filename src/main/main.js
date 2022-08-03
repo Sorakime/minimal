@@ -11,9 +11,6 @@ function nw() {
       preload: `${__dirname}/../preload/navigation.js`
     }
   });
-  win.webContents.openDevTools({
-    mode: 'undocked'
-  });
   win.webContents.loadFile(`${__dirname}/../renderer/navigation.html`);
   browser = new BrowserView({
     webPreferences: {
@@ -62,9 +59,7 @@ function nw() {
     browser.webContents.goForward();
   });
   ipcMain.handle('open', (e, url) => {
-    console.log(url.indexOf('http'));
     if (url.indexOf('http') !== 0) url = 'http://' + url;
-    console.log(url);
     browser.webContents.loadURL(url);
   });
 }
