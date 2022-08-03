@@ -1,0 +1,26 @@
+{
+  "name": "minimal",
+  "version": "1.0.0",
+  "description": "minimal -- web browser",
+  "main": "src/main/main.js",
+  "scripts": {
+    "test": "npx electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sorakime/minimal.git"
+  },
+  "keywords": [
+    "browser",
+    "electron"
+  ],
+  "author": "Sorakime",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sorakime/minimal/issues"
+  },
+  "homepage": "https://github.com/Sorakime/minimal#readme",
+  "devDependencies": {
+    "electron": "^20.0.0"
+  }
+}
