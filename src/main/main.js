@@ -1,4 +1,4 @@
-const {app, BrowserWindow, BrowserView, ipcMain} = require('electron');
+const {app, BrowserWindow, BrowserView, ipcMain, Menu} = require('electron');
 let win;
 let browser;
 
@@ -65,3 +65,5 @@ function nw() {
 }
 
 app.on('ready', nw);
+
+Menu.setApplicationMenu(null);

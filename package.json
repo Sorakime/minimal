@@ -33,7 +33,7 @@
     ],
     "win": {
       "icon": "src/image/icon.ico",
-      "portable"
+      "target": "portable"
     }
   }
 }
